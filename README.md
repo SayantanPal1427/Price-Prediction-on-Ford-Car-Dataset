@@ -1,24 +1,10 @@
 # Price-Prediction-on-Ford-Car-Dataset
-
-The project begins by importing essential Python libraries such as **NumPy, Pandas, Matplotlib, Seaborn, and Scikit-learn**. The Ford car dataset(Kaggle) is then loaded and inspected to understand its structure, dimensions, summary statistics, and missing values.
-
-Next, **Exploratory Data Analysis (EDA)** is performed to understand the relationships between different variables and the target variable (car price). Several visualizations, including histograms, scatter plots, box plots, and a correlation heatmap, are used to examine how factors such as **year of manufacture, mileage, engine size, fuel type, transmission type, tax, and fuel efficiency (mpg)** influence the selling price.
-
-Since the dataset contains categorical variables, the project experiments with **two different encoding techniques**:
-
-* **One-Hot Encoding** for categorical features.
-  -Here we create a dummy variable for each category excludingone to avoid Multicollinearity.
-* **Label Encoding** for categorical features.
-  -It transform each unique category in a column into a distinct number between 0 to
-  n-1; where n is the number of distinct category.
-   
-The numerical variables are then standardized using **StandardScaler** to ensure they are on a comparable scale before model training.
-
-After preprocessing, the dataset is divided into **training and testing sets** using a train-test split. A **Linear Regression** model is trained to predict car prices. The project builds and compares two versions of the model—one using one-hot encoded data and another using label-encoded data.
-
-Finally, the performance of the models is evaluated using **R² (Coefficient of Determination)** and **Adjusted R²**. These metrics help determine how well the model explains the variation in car prices and assess its predictive capability.
-After preprocessing the data and encoding categorical variables, an Ordinary Least Squares (OLS) regression model is developed. The model's assumptions are verified through diagnostic tests, and its performance is evaluated to provide accurate price predictions and insights into the key determinants of used car prices.
-Also we try to compare a linear regression model with a non linear regression model and check which of the above performs better.
-
-
-
+- A **Machine Learning Regression model** to predict the selling price of used Ford cars.
+- Cleaned and prepared the dataset by handling missing values, removing duplicates, encoding categorical data, and scaling features where needed.
+- Performed **Exploratory Data Analysis (EDA)** to understand the data and identify the factors that affect car prices.
+- Selected the most important features to improve the model's prediction accuracy.
+- Trained and tested different **Linear Regression** models to find the best-performing one.
+- Checked whether the **OLS (Ordinary Least Squares)** assumptions were satisfied and made the necessary improvements when they were violated.
+- Built a **Nonlinear Regression** model to capture more complex relationships in the data.
+- Compared the performance of **Linear** and **Nonlinear Regression** models to determine which model predicted prices more accurately.
+- Evaluated the models using **R² Score, Adjusted R², MAE, MSE,** and **RMSE**.
