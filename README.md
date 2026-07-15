@@ -17,6 +17,8 @@ The numerical variables are then standardized using **StandardScaler** to ensure
 After preprocessing, the dataset is divided into **training and testing sets** using a train-test split. A **Linear Regression** model is trained to predict car prices. The project builds and compares two versions of the model—one using one-hot encoded data and another using label-encoded data.
 
 Finally, the performance of the models is evaluated using **R² (Coefficient of Determination)** and **Adjusted R²**. These metrics help determine how well the model explains the variation in car prices and assess its predictive capability.
+After preprocessing the data and encoding categorical variables, an Ordinary Least Squares (OLS) regression model is developed. The model's assumptions are verified through diagnostic tests, and its performance is evaluated to provide accurate price predictions and insights into the key determinants of used car prices.
+Also we try to compare a linear regression model with a non linear regression model and check which of the above performs better.
 
 
 
