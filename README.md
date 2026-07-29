@@ -8,3 +8,6 @@
 - Built a **Nonlinear Regression** model to capture more complex relationships in the data.
 - Compared the performance of **Linear** and **Nonlinear Regression** models to determine which model predicted prices more accurately.
 - Evaluated the models using **R² Score, Adjusted R², MAE, MSE,** and **RMSE**.
+
+
+Note: R² measures the explanatory power of the model, which in turn reflects the goodness of fit of the model. It reflects the model adequacy in the sense of how much is the explanatory power of the explanatory variables. It quantifies  data variation explained, not necessarily the overall quality or practical usefulness of the model. 
